@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    background-color: #dadada;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#center {
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0 0px 3px rgba(46, 45, 45, 0.808);
+}
+
+p {
+    margin: 15px 0;
+    width: 100%;
+}
+
+p input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(10, 17, 112);
+    color: white;
+    transition: linear 0.5s;
+}
+
+p input:is(:focus, :hover) {
+    background-color: rgb(13, 24, 177);
+}
+
+p input::placeholder {
+    color: #cfc2c2;
+}
+
+p input[type='submit'] {
+    font-size: 20px;
+    transition: linear 0.5s;
+    margin-top: 20px;
+}
+
+p input[type='submit']:hover {
+    cursor: pointer;
+    background-color: rgb(7, 17, 151);
+}
